@@ -16,7 +16,8 @@ const UserForm = () => {
     date_joined: '',
   });
 
-  const setMessage = useState('');
+  // const setMessage = useState('');
+  const [message, setMessage] = useState('');
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -217,6 +218,7 @@ const UserForm = () => {
           </button>
         </div>
     </form>
+    {message && <p className="mt-3">{message}</p>}
     </div>
   );
 };
