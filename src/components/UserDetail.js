@@ -18,7 +18,7 @@ const UserDetail = ({ userId }) => {
     <div className="container mt-5">
       <h2 className="text-center mb-4">User Details</h2>
       {user ? (
-        <div>
+        <div className="container text-center align-items-center">
           <p>Username: {user.username}</p>
           <p>first_name: {user.first_name}</p>
           <p>last_name: {user.last_name}</p>

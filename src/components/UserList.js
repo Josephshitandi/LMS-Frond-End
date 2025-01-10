@@ -14,11 +14,11 @@ const UserList = ({ selectUser }) => {
   }, []);
 
   return (
-    <div className="container mt-5">
+    <div className="d-flex justify-content-center align-items-center">
       <h2 className="text-center mb-4">Users</h2>
-      <ul>
+      <ul >
         {users.map(user => (
-          <li key={user.id} onClick={() => selectUser(user.id)}>
+          <li key={user.id} onClick={() => selectUser(user.id)} className="text-center mb-4">
             {user.username}
           </li>
         ))}

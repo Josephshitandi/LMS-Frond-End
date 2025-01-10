@@ -16,7 +16,7 @@ const UserForm = () => {
     date_joined: '',
   });
 
-  const [ setMessage] = useState('');
+  const setMessage = useState('');
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -146,7 +146,7 @@ const UserForm = () => {
             required
           />
         </div>
-        
+
       <div className="mb-3">
           <label htmlFor="role" className="form-label">
             Select Role
@@ -172,7 +172,7 @@ const UserForm = () => {
           <input
             type="checkbox"
             id="is_staff"
-            name="isStaff"
+            name="is_staff"
             className="form-check-input"
             checked={formData.is_staff}
             onChange={handleChange}
@@ -192,7 +192,7 @@ const UserForm = () => {
             onChange={handleChange}
           />
           <label htmlFor="is_active" className="form-check-label">
-            Staff Access
+            Active Access
           </label>
         </div>
 
