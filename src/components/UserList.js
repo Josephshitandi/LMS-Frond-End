@@ -1,6 +1,8 @@
 // components/UserList.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const UserList = ({ selectUser }) => {
   const [users, setUsers] = useState([]);
