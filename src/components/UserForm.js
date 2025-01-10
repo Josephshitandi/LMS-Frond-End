@@ -15,6 +15,8 @@ const UserForm = () => {
     date_joined: '',
   });
 
+  const [message, setMessage] = useState('');
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -23,20 +25,45 @@ const UserForm = () => {
     });
   };
 
+  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/user/', formData);
-      console.log('User data submitted:', response.data);
+      // POST request to Django API
+      const response = await axios.post('http://localhost:8000/api/user/', formData, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (response.status === 201) {
+        setMessage('User created successfully!');
+        // Reset the form
+        setFormData({
+            username: '',
+            first_name: '',
+            last_name: '',
+            password: '',
+            email: '',
+            role: '',
+            is_staff: false,
+            is_active: false,
+            date_joined: '',
+        });
+      }
     } catch (error) {
-      console.error('Error submitting user data:', error);
+      setMessage(
+        'Error creating user: ' +
+          (error.response ? JSON.stringify(error.response.data) : error.message)
+      );
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
+        <h2>Create User </h2>
         <div>
+            
         <label htmlFor="username">Username:</label>
         <input
           type="text"
@@ -105,8 +132,8 @@ const UserForm = () => {
         >
           <option value="">Select Role</option>
           <option value="admin">Admin</option>
-          <option value="editor">Instructor</option>
-          <option value="viewer">Student</option>
+          <option value="instructor">Instructor</option>
+          <option value="student">Student</option>
         </select>
       </div>
 
