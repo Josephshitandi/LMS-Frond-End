@@ -1,40 +1,19 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+// App.js
+import React, { useState } from 'react';
+import UserList from './components/UserList';
+import UserDetail from './components/UserDetail';
+import UserForm from './components/UserForm';
 
-const TaskList = () => {
-  const [tasks, setTasks] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-
-  useEffect(() => {
-    // Fetch tasks from the API
-    axios
-      .get("http://127.0.0.1:8000/api/user/") // Update the URL if needed
-      .then((response) => {
-        setTasks(response.data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError("An error occurred while fetching tasks.");
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+const App = () => {
+  const [selectedUser, setSelectedUser] = useState(null);
 
   return (
     <div>
-      <h1>Task List</h1>
-      <ul>
-        {tasks.map((task) => (
-          <li key={task.id}>
-            {task.name} - {task.completed ? "Completed" : "Not Completed"}
-          </li>
-        ))}
-      </ul>
+      <UserList selectUser={setSelectedUser} />
+      <UserDetail userId={selectedUser} />
+      <UserForm userId={selectedUser} refreshUsers={() => setSelectedUser(null)} />
     </div>
   );
 };
 
-export default TaskList;
+export default App;
