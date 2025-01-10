@@ -15,8 +15,8 @@ const UserDetail = ({ userId }) => {
   }, [userId]);
 
   return (
-    <div>
-      <h2>User Details</h2>
+    <div className="container mt-5">
+      <h2 className="text-center mb-4">User Details</h2>
       {user ? (
         <div>
           <p>Username: {user.username}</p>
@@ -30,7 +30,7 @@ const UserDetail = ({ userId }) => {
           <p>date_joined: {user.date_joined}</p>
         </div>
       ) : (
-        <p>Select a user to see details.</p>
+        <p className="text-center mb-4"> Select a user to see details.</p>
       )}
     </div>
   );
