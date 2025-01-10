@@ -19,9 +19,14 @@ const UserDetail = ({ userId }) => {
       {user ? (
         <div>
           <p>Username: {user.username}</p>
-          <p>Email: {user.email}</p>
-          <p>First Name: {user.first_name}</p>
-          <p>Last Name: {user.last_name}</p>
+          <p>first_name: {user.first_name}</p>
+          <p>last_name: {user.last_name}</p>
+          <p>password: {user.password}</p>
+          <p>role: {user.role}</p>
+          <p>email: {user.email}</p>
+          <p>is_staff: {user.is_staff}</p>
+          <p>is_active: {user.is_active}</p>
+          <p>date_joined: {user.date_joined}</p>
         </div>
       ) : (
         <p>Select a user to see details.</p>
