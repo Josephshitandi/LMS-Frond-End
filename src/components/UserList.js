@@ -14,8 +14,8 @@ const UserList = ({ selectUser }) => {
   }, []);
 
   return (
-    <div>
-      <h2>Users</h2>
+    <div className="container mt-5">
+      <h2 className="text-center mb-4">Users</h2>
       <ul>
         {users.map(user => (
           <li key={user.id} onClick={() => selectUser(user.id)}>
