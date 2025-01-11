@@ -1,12 +1,10 @@
 // App.js
 import React, { useState } from 'react';
-import UserList from './components/UserList';
-import UserDetail from './components/UserDetail';
-import UserForm from './components/UserForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import About from './components/about';
+import Home from './components/home';
 
 
 const App = () => {
@@ -20,13 +18,9 @@ const App = () => {
       <Routes>
         <Route path="/" element={<h1>LMS</h1>} />
         <Route path="/about" element={<About />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </Router>
-      </div>
-      <div>
-      <UserList selectUser={setSelectedUser} />
-      <UserDetail userId={selectedUser} />
-      <UserForm userId={selectedUser} refreshUsers={() => setSelectedUser(null)} />
       </div>
     </div>
   );
