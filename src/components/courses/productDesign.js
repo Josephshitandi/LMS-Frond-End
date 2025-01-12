@@ -3,20 +3,15 @@ import React from 'react';
 const Product = () => {
   return (
     <div className="container mt-4">
-      <h1>Data Security</h1>
+      <h1>Product Design</h1>
       <p>
-      Become a Data engineer to help businesses develop Data,<br />
-       build web applications, and products that will help shape the future of the company.
+      Learn product validation, UI/UX practices, <br />Design Sprint and the process for setting and tracking actionable metrics.
       </p>
 
       <h2>Course Offerings</h2>
       <p>
-        Full Stack Data Engineering Bootcamp<br />
-        Full-time Remote, Full-time Hybrid, Part-time Remote,<br />
-        Android App Development Bootcamp<br />
-        Full-time Remote<br />
-        DevOps Engineering<br />
-        Part-time Remote
+      Product Design Bootcamp<br />
+      Full-time Remote, Part-time Remote
       </p>
     </div>
   );

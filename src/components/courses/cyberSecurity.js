@@ -5,18 +5,16 @@ const Cyber = () => {
     <div className="container mt-4">
       <h1>Cyber Security</h1>
       <p>
-      Become a Cyber engineer to help businesses develop Data,<br />
-       build web applications, and products that will help shape the future of the company.
+      Your journey to becoming a cybersecurity expert starts here,<br />
+       beginner to advance level training available.
       </p>
 
       <h2>Course Offerings</h2>
       <p>
-        Full Stack Data Engineering Bootcamp<br />
-        Full-time Remote, Full-time Hybrid, Part-time Remote,<br />
-        Android App Development Bootcamp<br />
-        Full-time Remote<br />
-        DevOps Engineering<br />
-        Part-time Remote
+        Introduction to Cybersecurity<br />
+        Full-time Remote, Part-time Remote<br />
+        Cybersecurity Bootcamp<br />
+        Full-time Remote, Part-time Remote<br />
       </p>
     </div>
   );
