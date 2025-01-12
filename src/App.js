@@ -7,6 +7,7 @@ import About from './components/about';
 import Home from './components/home';
 import Software from './components/courses/softwareEngineer';
 import ContactForm from './components/contact';
+import Data from './components/courses/dataScience';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/courses/softwareEngineer" element={<Software />} />
+        <Route path="/courses/dataScience" element={<Data />} />
       </Routes>
     </Router>
       </div>
