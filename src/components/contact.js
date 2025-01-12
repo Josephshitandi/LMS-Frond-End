@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ContactForm = () => {
@@ -8,6 +9,7 @@ const ContactForm = () => {
     fullnames: '',
     email: '',
     country: '',
+    message: '',
   });
 
   const [message, setMessage] = useState('');
@@ -61,6 +63,7 @@ const ContactForm = () => {
           fullnames: '',
           email: '',
           country: '',
+          message: '',
         });
       }
     } catch (error) {
@@ -74,7 +77,14 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <Container fluid>
+      <Row>
+        <Col md={6} style={{ backgroundColor: '#f8f9fa' }}>
+        <div className="container mt-5">
+      <div className="container mt-3">
+      
+      </div>
+      <div className="container mt-3">
       <h2 className="text-center mb-4">Contact Us</h2>
       <form onSubmit={handleSubmit} className="p-4 border rounded bg-light shadow">
         <div className="mb-3">
@@ -141,13 +151,37 @@ const ContactForm = () => {
             ))}
           </select>
         </div>
+        <div className="mb-3">
+          <label htmlFor="message" className="form-label">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            className="form-control"
+            rows="5"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="Enter your message"
+            required
+          ></textarea>
+        </div>
 
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">Submit</button>
         </div>
       </form>
       {message && <p className="mt-3">{message}</p>}
+      
+      </div>
+      
     </div>
+        </Col>
+        <Col md={6} style={{ backgroundColor: '#f8f9fa'}}>
+        </Col>
+      </Row>
+    </Container>
+    
   );
 };
 
