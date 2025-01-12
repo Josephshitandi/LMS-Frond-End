@@ -6,11 +6,11 @@ const NavbarComponent = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/home">ADVANCED LMS</Navbar.Brand>
+        <Navbar.Brand href="/">ADVANCED LMS</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
             <NavDropdown title="Services" id="navbar-dropdown">
               <NavDropdown.Item href="/courses/softwareEngineer">Software Engineering</NavDropdown.Item>
