@@ -96,7 +96,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">
+              <a className="nav-link" href="/contact">
                 Contact
               </a>
             </li>
