@@ -11,6 +11,7 @@ import ContactForm from './components/contact';
 import Data from './components/courses/dataScience';
 import Cyber from './components/courses/cyberSecurity';
 import Product from './components/courses/productDesign';
+import LoginForm from './components/users/login';
 
 
 
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/courses/dataScience" element={<Data />} />
           <Route path="/courses/cyberSecurity" element={<Cyber />} />
           <Route path="/courses/productDesign" element={<Product />} />
+          <Route path="/users/login" element={<LoginForm />} />
         </Routes>
       </Router>
       </div>
