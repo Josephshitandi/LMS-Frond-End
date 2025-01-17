@@ -1,10 +1,11 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./NavbarComponent.css"; // Import custom styles
 
 const NavbarComponent = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="custom-navbar" expand="lg">
       <Container>
         <Navbar.Brand href="/">ADVANCED LMS</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
@@ -12,7 +13,7 @@ const NavbarComponent = () => {
           <Nav className="ml-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
-            <NavDropdown title="Services" id="navbar-dropdown">
+            <NavDropdown title="Services" id="navbar-dropdown" className="custom-dropdown">
               <NavDropdown.Item href="/courses/softwareEngineer">Software Engineering</NavDropdown.Item>
               <NavDropdown.Item href="/courses/dataScience">Data Science</NavDropdown.Item>
               <NavDropdown.Item href="/courses/cyberSecurity">Cyber Security</NavDropdown.Item>

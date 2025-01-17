@@ -1,0 +1,32 @@
+/* Change navbar background color */
+.custom-navbar {
+  background-color: #007bff; /* Customize with your preferred color */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #fff !important; /* Ensure text contrasts with the background */
+  transition: color 0.3s ease-in-out;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffdd57 !important; /* Hover effect on links */
+}
+
+/* Show dropdown on hover */
+.custom-dropdown:hover > .dropdown-menu {
+  display: block; /* Make dropdown visible */
+}
+
+.custom-dropdown .dropdown-menu {
+  background-color: #0056b3; /* Dropdown background color */
+}
+
+.custom-dropdown .dropdown-item {
+  color: #fff; /* Dropdown item text color */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #003d7d; /* Hover effect for dropdown items */
+}
