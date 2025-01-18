@@ -4,10 +4,14 @@ function App() {
   // State to track visibility of the paragraphs
   const [isVisible1, setIsVisible1] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
+  const [isVisible3, setIsVisible3] = useState(false);
+  const [isVisible4, setIsVisible4] = useState(false);
 
   // Functions to toggle visibility
   const toggleParagraph1 = () => setIsVisible1(!isVisible1);
   const toggleParagraph2 = () => setIsVisible2(!isVisible2);
+  const toggleParagraph3 = () => setIsVisible3(!isVisible3);
+  const toggleParagraph4 = () => setIsVisible4(!isVisible4);
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
@@ -98,7 +102,7 @@ function App() {
           }}
         >
           <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            Why Learn Software Engineering?
+          Who is this course for?
           
           <button
             onClick={toggleParagraph2}
@@ -126,9 +130,101 @@ function App() {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-              Learning software engineering opens doors to various industries, offering opportunities
-              to innovate and solve problems. It’s a career path with high demand, excellent
-              remuneration, and continuous learning.
+            If you want to build a career in software engineering, this course is for you!
+            Individuals new to coding who want to build a strong foundation in software development.
+            Professionals looking to transition into tech and secure roles in software engineering.
+            Those with some coding experience who want to enhance their skills and become full-stack developers.
+            Anyone passionate about technology and problem-solving, eager to learn both front-end and back-end development.
+            </p>
+          </div>
+        )}
+        {/* Third Section */}
+        <div
+          style={{
+            backgroundColor: 'white',
+            padding: '15px',
+            borderRadius: '5px',
+          }}
+        >
+          <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
+          What are the Course Prerequisites?
+          
+          <button
+            onClick={toggleParagraph3}
+            style={{
+              marginLeft: '10px',
+              cursor: 'pointer',
+              border: '1px solid #ccc',
+              borderRadius: '5px',
+              padding: '5px 10px',
+              backgroundColor: '#f0f0f0',
+              fontSize: '16px',
+            }}
+          >
+            {isVisible3 ? '-' : '+'}
+          </button></p>
+        </div>
+        {isVisible3 && (
+          <div
+            style={{
+              backgroundColor: 'white',
+              padding: '15px',
+              borderRadius: '5px',
+              marginBottom: '10px',
+              
+            }}
+          >
+            <ol style={{ listStyleType: 'none', padding: 0 }}>
+                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have basic computer knowledge</li>
+                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have graduated from high school</li>
+                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Complete the application process by taking a technical assessment test</li>
+                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have a laptop with the following specs (core i5 upwards, 8GB RAM, 500GB upwards of storage).</li>
+                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black'  }}>Have stable internet access</li>
+            </ol>
+          </div>
+        )}
+
+        {/* Forth Section */}
+        <div
+          style={{
+            backgroundColor: 'white',
+            padding: '15px',
+            borderRadius: '5px',
+          }}
+        >
+          <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
+          Why learn Software Engineering?
+          
+          <button
+            onClick={toggleParagraph4}
+            style={{
+              marginLeft: '10px',
+              cursor: 'pointer',
+              border: '1px solid #ccc',
+              borderRadius: '5px',
+              padding: '5px 10px',
+              backgroundColor: '#f0f0f0',
+              fontSize: '16px',
+            }}
+          >
+            {isVisible4 ? '-' : '+'}
+          </button></p>
+        </div>
+        {isVisible4 && (
+          <div
+            style={{
+              backgroundColor: 'white',
+              padding: '15px',
+              borderRadius: '5px',
+              marginBottom: '10px',
+              
+            }}
+          >
+            <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
+            Practical Hands-on Learning– Get job-ready with practical, hands-on learning. You’ll learn the in-demand market languages and skills, labs, and real-world portfolio development.
+            Technical Mentorship Schedule – 1:1s with your instructor to work on technical concepts, plan out your pacing or check-in about your program milestones.
+            Learn in Community – You may be learning online/hybrid but you’re not alone. You can schedule 1:1s with your instructor for added guidance
+            Career Coaching and Graduate Support– Receive career coaching and job-hunting support for up to 12 months post graduation
             </p>
           </div>
         )}
