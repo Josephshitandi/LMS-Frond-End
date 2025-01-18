@@ -12,6 +12,7 @@ import Data from './components/courses/dataScience';
 import Cyber from './components/courses/cyberSecurity';
 import Product from './components/courses/productDesign';
 import LoginForm from './components/users/login';
+import RegistrationForm from './components/users/RegistrationForm';
 
 
 
@@ -24,13 +25,14 @@ const App = () => {
         <NavbarComponent />
         <Routes>
           <Route path="/about" element={<About />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<ContactForm />} />
           <Route path="/courses/softwareEngineer" element={<Software />} />
           <Route path="/courses/dataScience" element={<Data />} />
           <Route path="/courses/cyberSecurity" element={<Cyber />} />
           <Route path="/courses/productDesign" element={<Product />} />
           <Route path="/users/login" element={<LoginForm />} />
+          <Route path="/users/Registration" element={<RegistrationForm />} />
         </Routes>
       </Router>
       </div>

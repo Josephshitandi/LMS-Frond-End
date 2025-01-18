@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Form, Button, Alert, Container } from "react-bootstrap";
 import axios from "axios";
 
@@ -54,7 +55,10 @@ const LoginForm = () => {
 
       {error && <Alert variant="danger" className="mt-3">{error}</Alert>}
       {success && <Alert variant="success" className="mt-3">{success}</Alert>}
+      <p></p><br/><br/><br/>
+      <p>Dont have account! Click <a href="/users/Registration" target="_blank" rel="noopener noreferrer">here</a> to register</p>
     </Container>
+    
   );
 };
 
