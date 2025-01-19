@@ -33,20 +33,27 @@ const Cyber = () => {
       <div>
         <div className="container mt-5">
           <p style={{ margin: 0, fontSize: '48px', fontWeight: 'bold' }}>
-            Full Stack Software Engineering
+          Introduction to Cybersecurity
           </p>
           <p style={{  fontSize: '18px', lineHeight: '1.5' }}>
-            An intensive software engineering program designed to launch your career in tech.
-            <br />
-            Master Front-End and Back-End technologies to become a full-stack developer.
+          An introductory course designed to prepare you for the Cybersecurity bootcamp.
+           Learn the building blocksof cybersecurity, networking & IT.
           </p>
         </div>
         <div className="container mt-5">
           <p style={{ margin: 0, fontSize: '30px', fontWeight: 'bold' }}>
-            Fast-track your journey into the tech industry
+          Your pathway to a rewarding career in Cybersecurity starts here
           </p>
           <p style={{  fontSize: '18px', lineHeight: '1.5' }}>
-            Accelerate your career with our immersive Software Engineering Bootcamp, designed to equip you with advanced skills in coding, web development, software architecture, and collaborative tools like Git. Through hands-on projects and in-depth training, this program prepares you to tackle real-world challenges and thrive in the ever-evolving tech industry. Part Time & Full Time(Hybrid and online) options available with admissions entry guided by a technical assessment to ensure you’re ready to excel.
+          Are you new to the world of cybersecurity as a professional, 
+           or just interested in getting started in this industry? This introductory course is for you.
+
+          Learners explore topics from cyber threats to cyber
+           intelligence while gaining practical insight into governance, risk & compliance.
+            At the end of the course, you will earn a 
+          certificate of completion from Moringa and be well-prepared to take up 
+          the professional certification exams for beginners such as the (ISC)², Network+, CompTIA A+ etc.
+
           </p>
         </div>
       </div>
@@ -73,7 +80,7 @@ const Cyber = () => {
           }}
         >
           <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            What is Software Engineering?
+          What is Cybersecurity?
           <button
             onClick={toggleParagraph1}
             style={{
@@ -100,10 +107,10 @@ const Cyber = () => {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-              Software engineering is the process of designing, building, and maintaining software
-              systems. It involves using programming, problem-solving, and engineering principles to
-              create software that meets user needs and works efficiently. Essentially, it’s about
-              turning ideas into functional, reliable software applications.
+            Cybersecurity refers to the practice of protecting systems, networks,
+            and programs from digital attacks, unauthorized access, damage, or theft. 
+            It encompasses a wide range of technologies, processes, and practices designed to safeguard computers,
+            servers, mobile devices, electronic systems, networks, and data from cyber threats.
             </p>
           </div>
         )}
@@ -145,11 +152,11 @@ const Cyber = () => {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            If you want to build a career in software engineering, this course is for you!
-            Individuals new to coding who want to build a strong foundation in software development.
-            Professionals looking to transition into tech and secure roles in software engineering.
-            Those with some coding experience who want to enhance their skills and become full-stack developers.
-            Anyone passionate about technology and problem-solving, eager to learn both front-end and back-end development.
+            If you are looking to start your career in cybersecurity from scratch you qualify. No one is left out!
+
+            High School Graduates: Ideal for recent high school graduates looking to explore and gain early experience in a promising field.
+            University Ongoing Students & Graduates: seeking to bridge the gap between academic knowledge and practical, job-ready skills in cybersecurity.
+            Professionals interested in changing their careers to cybersecurity.
             </p>
           </div>
         )}
@@ -190,8 +197,8 @@ const Cyber = () => {
             }}
           >
             <ol style={{ listStyleType: 'none', padding: 0 }}>
-                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have basic computer knowledge</li>
-                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have graduated from high school</li>
+                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have basic IT/computer skills.</li>
+                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Proficiency in English – both spoken and written</li>
                 <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Complete the application process by taking a technical assessment test</li>
                 <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have a laptop with the following specs (core i5 upwards, 8GB RAM, 500GB upwards of storage).</li>
                 <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black'  }}>Have stable internet access</li>
@@ -208,7 +215,7 @@ const Cyber = () => {
           }}
         >
           <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-          Why learn Software Engineering?
+          Why learn Cybersecurity?
           
           <button
             onClick={toggleParagraph4}
@@ -236,10 +243,11 @@ const Cyber = () => {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            Practical Hands-on Learning– Get job-ready with practical, hands-on learning. You’ll learn the in-demand market languages and skills, labs, and real-world portfolio development.
-            Technical Mentorship Schedule – 1:1s with your instructor to work on technical concepts, plan out your pacing or check-in about your program milestones.
-            Learn in Community – You may be learning online/hybrid but you’re not alone. You can schedule 1:1s with your instructor for added guidance
-            Career Coaching and Graduate Support– Receive career coaching and job-hunting support for up to 12 months post graduation
+            Growing Demand for Cybersecurity Professionals: As cyber threats become more prevalent, there is a high demand for talent, leading to numerous job opportunities and career growth potential.
+            Foundation for Further Specialization: Starting with cybersecurity fundamentals can pave the way for more specialized areas within the field, such as ethical hacking, threat intelligence, or security architecture.
+            Global Relevance: Cybersecurity knowledge is applicable worldwide, making it easier to find job opportunities in various countries and industries.
+            Career readiness: explore job trends and position yourself for a prospective job as the cybersecurity industry continues to grow.
+            Upskill in a new field: Learn what cybersecurity is and its potential impact on you & understand the most common threats, attacks, and vulnerabilities. Also, gain insights into how businesses protect their operations from attacks.
             </p>
           </div>
         )}
