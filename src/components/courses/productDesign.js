@@ -30,12 +30,11 @@ const Product = () => {
       <div>
         <div className="container mt-5">
           <p style={{ margin: 0, fontSize: '48px', fontWeight: 'bold' }}>
-            Full Stack Software Engineering
+           Product Design Bootcamp
           </p>
           <p style={{  fontSize: '18px', lineHeight: '1.5' }}>
-            An intensive software engineering program designed to launch your career in tech.
-            <br />
-            Master Front-End and Back-End technologies to become a full-stack developer.
+            Intensive program for aspiring product designers. 
+            Learn the complete design process, from user research and ideation to creating user-centered digital products
           </p>
         </div>
         <div className="container mt-5">
@@ -43,7 +42,11 @@ const Product = () => {
             Fast-track your journey into the tech industry
           </p>
           <p style={{  fontSize: '18px', lineHeight: '1.5' }}>
-            Accelerate your career with our immersive Software Engineering Bootcamp, designed to equip you with advanced skills in coding, web development, software architecture, and collaborative tools like Git. Through hands-on projects and in-depth training, this program prepares you to tackle real-world challenges and thrive in the ever-evolving tech industry. Part Time & Full Time(Hybrid and online) options available with admissions entry guided by a technical assessment to ensure you’re ready to excel.
+            The Product Design program is your gateway to an exciting world of digital product design, focusing on creating intuitive experiences for websites, mobile applications, and computer programs.
+
+            This holistic course covers the entire UX and UI process, empowering you to design user-centered solutions. While coding knowledge is not required, we teach HTML and CSS basics to enhance your design capabilities.
+
+            Whether you’re a high school graduate exploring future career options, a university graduate enhancing your employability, or a working professional seeking a career shift, this program equips you with essential skills to excel in the fast-growing field of Product design.
           </p>
         </div>
       </div>
@@ -70,7 +73,7 @@ const Product = () => {
           }}
         >
           <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            What is Software Engineering?
+          What is Product Design?
           <button
             onClick={toggleParagraph1}
             style={{
@@ -97,10 +100,11 @@ const Product = () => {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-              Software engineering is the process of designing, building, and maintaining software
-              systems. It involves using programming, problem-solving, and engineering principles to
-              create software that meets user needs and works efficiently. Essentially, it’s about
-              turning ideas into functional, reliable software applications.
+            
+
+            Product design is the process of creating and developing a new product or improving an existing one to meet user needs and solve problems. 
+            It involves a combination of various disciplines, including research, engineering, marketing, and aesthetics. 
+            The goal of product design is to enhance user experience while ensuring functionality, usability, and market viability.
             </p>
           </div>
         )}
@@ -142,11 +146,12 @@ const Product = () => {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            If you want to build a career in software engineering, this course is for you!
-            Individuals new to coding who want to build a strong foundation in software development.
-            Professionals looking to transition into tech and secure roles in software engineering.
-            Those with some coding experience who want to enhance their skills and become full-stack developers.
-            Anyone passionate about technology and problem-solving, eager to learn both front-end and back-end development.
+              This course is designed for beginners, no previous UI/UX or design experience is required.
+
+              High School Graduates: Ideal for recent high school graduates looking to explore a career in design and gain early experience in a promising field.
+              University Graduates: Perfect for recent university graduates seeking to bridge the gap between academic knowledge and practical, job-ready skills.
+              Professionals interested in changing their career and looking for a fast tech skill to learn or who want to expand their skill set and understanding of product design (Marketing, Graphic Design, Engineering, Product Managers)
+              Front End Web developers who are looking to improve their skills in design
             </p>
           </div>
         )}
@@ -205,7 +210,7 @@ const Product = () => {
           }}
         >
           <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-          Why learn Software Engineering?
+          Why learn Product Design ?
           
           <button
             onClick={toggleParagraph4}
@@ -233,10 +238,13 @@ const Product = () => {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            Practical Hands-on Learning– Get job-ready with practical, hands-on learning. You’ll learn the in-demand market languages and skills, labs, and real-world portfolio development.
-            Technical Mentorship Schedule – 1:1s with your instructor to work on technical concepts, plan out your pacing or check-in about your program milestones.
-            Learn in Community – You may be learning online/hybrid but you’re not alone. You can schedule 1:1s with your instructor for added guidance
-            Career Coaching and Graduate Support– Receive career coaching and job-hunting support for up to 12 months post graduation
+            
+
+              High Demand for Skills: Skilled product designers are increasingly sought after by companies focused on user experience, leading to strong job prospects in various industries.
+              Diverse Career Opportunities: Product design skills open doors to various career paths, including UI/UX design, industrial design, and graphic design, across multiple sectors like technology, consumer goods, and healthcare.
+              Creativity and Innovation: Learning product design encourages creative thinking and problem-solving, allowing you to bring innovative ideas to life and make a meaningful impact.
+              User-Centered Approach: Understanding user needs and experiences is central to product design, enabling you to create products that resonate with consumers and enhance their lives.
+              Portfolio Development: As you work on projects, you’ll build a strong portfolio that showcases your skills and creativity, making you more attractive to potential employers.
             </p>
           </div>
         )}
