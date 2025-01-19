@@ -34,20 +34,22 @@ const Data = () => {
       <div>
         <div className="container mt-5">
           <p style={{ margin: 0, fontSize: '48px', fontWeight: 'bold' }}>
-            Full Stack Software Engineering
+          Data Science Bootcamp
           </p>
           <p style={{  fontSize: '18px', lineHeight: '1.5' }}>
-            An intensive software engineering program designed to launch your career in tech.
-            <br />
-            Master Front-End and Back-End technologies to become a full-stack developer.
+          An intensive Data Science Bootcamp for those looking to upskill or launch a career in Data Science. Master Data Analytics, Python, Machine Learning and AI.
           </p>
         </div>
         <div className="container mt-5">
           <p style={{ margin: 0, fontSize: '30px', fontWeight: 'bold' }}>
-            Fast-track your journey into the tech industry
+          Acquire in-demand data skills that are transforming businesses and industries today
           </p>
           <p style={{  fontSize: '18px', lineHeight: '1.5' }}>
-            Accelerate your career with our immersive Software Engineering Bootcamp, designed to equip you with advanced skills in coding, web development, software architecture, and collaborative tools like Git. Through hands-on projects and in-depth training, this program prepares you to tackle real-world challenges and thrive in the ever-evolving tech industry. Part Time & Full Time(Hybrid and online) options available with admissions entry guided by a technical assessment to ensure you’re ready to excel.
+          If you aspire to be a Data Scientist, Data Analyst, or Machine Learning Engineer, this program is perfect for you.
+
+Our comprehensive Data Science course will guide you from beginner to mid-level, covering essential topics such as Python for Data Science, data cleaning, analysis, visualization, and machine learning. You’ll gain hands-on experience through practical projects and receive mentorship from industry experts.
+
+By the end of the program, you’ll be an exceptionally skilled professional, ready to tackle real-world challenges using the power of data!
           </p>
         </div>
       </div>
@@ -74,7 +76,7 @@ const Data = () => {
           }}
         >
           <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            What is Software Engineering?
+          What is Data Science?
           <button
             onClick={toggleParagraph1}
             style={{
@@ -101,10 +103,12 @@ const Data = () => {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-              Software engineering is the process of designing, building, and maintaining software
-              systems. It involves using programming, problem-solving, and engineering principles to
-              create software that meets user needs and works efficiently. Essentially, it’s about
-              turning ideas into functional, reliable software applications.
+            
+
+            Data Science is an interdisciplinary field that deploys algorithms, and other scientific methods
+             and processes to acquire insights and knowledge from data. Data Scientists are equipped with the
+              knowledge of how to use data, tell a story, and derive insights for businesses. Many industries 
+              are now leveraging data for decision-making in their day-to-day operations and forecasting.
             </p>
           </div>
         )}
@@ -146,11 +150,11 @@ const Data = () => {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            If you want to build a career in software engineering, this course is for you!
-            Individuals new to coding who want to build a strong foundation in software development.
-            Professionals looking to transition into tech and secure roles in software engineering.
-            Those with some coding experience who want to enhance their skills and become full-stack developers.
-            Anyone passionate about technology and problem-solving, eager to learn both front-end and back-end development.
+            
+
+            Aspiring data scientists and data analysts who are eager to harness the power of data to drive decisions.
+            Ongoing university student/graduate who has taken a course that has math and statistics concepts and/or IT related related courses.
+            Working professionals who work with data e.g fintech, banking, research
             </p>
           </div>
         )}
@@ -191,8 +195,8 @@ const Data = () => {
             }}
           >
             <ol style={{ listStyleType: 'none', padding: 0 }}>
-                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have basic computer knowledge</li>
-                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have graduated from high school</li>
+                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have a basic understanding or strong background in math & statistics concepts.</li>
+                <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have a university/college education (ongoing or graduated).</li>
                 <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Complete the application process by taking a technical assessment test</li>
                 <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black' }}>Have a laptop with the following specs (core i5 upwards, 8GB RAM, 500GB upwards of storage).</li>
                 <li style={{ marginBottom: '10px', fontSize: '18px', color: 'black'  }}>Have stable internet access</li>
@@ -209,7 +213,7 @@ const Data = () => {
           }}
         >
           <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-          Why learn Software Engineering?
+          Why learn Data Science?
           
           <button
             onClick={toggleParagraph4}
@@ -237,10 +241,13 @@ const Data = () => {
             }}
           >
             <p style={{ fontSize: '18px', lineHeight: '1.5', color: 'black' }}>
-            Practical Hands-on Learning– Get job-ready with practical, hands-on learning. You’ll learn the in-demand market languages and skills, labs, and real-world portfolio development.
-            Technical Mentorship Schedule – 1:1s with your instructor to work on technical concepts, plan out your pacing or check-in about your program milestones.
-            Learn in Community – You may be learning online/hybrid but you’re not alone. You can schedule 1:1s with your instructor for added guidance
-            Career Coaching and Graduate Support– Receive career coaching and job-hunting support for up to 12 months post graduation
+            
+
+            In-demand Skill Set: Data science is at the forefront of the digital age. As businesses increasingly rely on data for decision-making, professionals with data science skills are in high demand across various industries.
+            Career Opportunities: Learning data science opens up a wide array of career opportunities, ranging from data analyst and machine learning engineer to data scientist and AI specialist
+            Innovation: Whether in healthcare, finance, marketing, or other fields, data science plays a pivotal role in driving innovation and creating new possibilities.
+            High Earning Potential: Data scientists are often among the top earners in the technology sector.
+            Global Impact: Data science has the potential to address global challenges, such as healthcare optimization, climate change analysis, and more. By learning data science, you can contribute to solving critical issues on a global scale.
             </p>
           </div>
         )}
